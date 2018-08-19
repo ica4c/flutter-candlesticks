@@ -19,9 +19,9 @@ Install for Flutter [with pub](https://pub.dartlang.org/packages/flutter_candles
 | gridLineColor      | Default `Colors.grey`. Color of grid lines                                |
 | gridLineLabelColor | Default `Colors.grey`. Color of grid line labels                          |
 | labelPrefix        | Default `"$"`. Prefix before grid line labels.                            |
-| increasePaint      | Default `Colors.green`. Color of increasing candles.                      |
-| decreasePaint      | Default `Colors.red`. Color of decreasing candles.                        |
-| volumePaint        | Default `candlestick color`. Color of volume bars, optional               |
+| increasePaint      | Default `green stroke`. Paint of increasing candles.                      |
+| decreasePaint      | Default `red fill`. Paint of decreasing candles.                          |
+| volumePaint        | Default `corresponding candlestick color`. Paint of volume bars           |
 
 ## Examples
 
@@ -85,7 +85,7 @@ new OHLCVGraph(
 )
 ```
 
-<img src="screenshots/custom_colors.png" width="50%">
+<img src="screenshots/custom_colors.png" width="50%"><img src="screenshots/custom_colors_dark.png" width="50%">
 
 
 ### Full App Example
