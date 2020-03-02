@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
@@ -253,11 +255,9 @@ class _OHLCVPainter extends CustomPainter {
       double volBarTop = (height + volumeHeight) - (data[i]["volumeto"] * volumeNormalizer);
       double volBarBottom = height + volumeHeight;
 
-      bool isChanged = data[i]["open"] != data[i]['close'] && data[i]["high"] != data[i]["close"];
-
-      bool isDecreasing = data[i]["open"] != data[i]["close"]
-          ? data[i]["open"] > data[i]["close"]
-          : data[i]["high"] > data[i]['low'];
+      bool isChanged = data[i]["open"] != data[i]['close'] && data[i]["high"] != data[i]["low"];
+      bool isDecreasing =
+          data[i]["open"] > data[i]["close"] || data[i]["high"] < data[max(i - 1, 0)]['high'];
 
       rectPaint = isChanged ? (isDecreasing ? decreasePaint : increasePaint) : noChangePaint;
 

@@ -1,0 +1,19 @@
+name: flutter_candlesticks_example
+description: Example project.
+version: 0.1.1
+author: Trent Piercy <trentjpiercy@gmail.com>
+homepage: https://github.com/trentpiercy/flutter-candlesticks
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_candlesticks:
+    path: ../
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+environment:
+  sdk: '>=2.0.0 <3.0.0'
