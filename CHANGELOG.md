@@ -1,3 +1,15 @@
+## [0.1.4] - 2019-04-28
+
+* Fix unused label prefix
+
+## [0.1.3] - 2019-04-28
+
+* Dart 2
+
+## [0.1.2] - 2018-08-31
+
+* Update version constraints for Dart 2.1.0
+
 ## [0.1.1] - 2018-08-06
 
 * Added increaseColor and decreaseColor options
